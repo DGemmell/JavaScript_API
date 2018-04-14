@@ -33,14 +33,14 @@
     }.bind(this));
   };
 
-  MapWrapper.prototype.addInfoWindow = function (coords, text) {
+  MapWrapper.prototype.addInfoWindow = function (coords, weatherInformation) {
       var url = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=3351093e25c30f219696047357c3f23f';
       var request = new XMLHttpRequest();
       request.open('GET', url);
       var marker = this.addMarker(coords);
       marker.addListener('click', function () {
         var infoWindow = new google.maps.InfoWindow({
-          content: text
+          content: weatherInformation
         });
         infoWindow.open(this.map, marker);
       })
