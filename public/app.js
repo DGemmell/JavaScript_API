@@ -10,24 +10,25 @@ const initialize = function(){
     // const map = new MapWrapper(container, center, zoom);
     // map.addMarker(center);
 
-
+// How can i add an image of raining?
     const mainMap = new MapWrapper(container, center, zoom);
-    mainMap.addClickEvent('its Sunny!');
-    mainMap.addInfoWindow(center, "<b>Our House</b><p> It's raining</p></b>");
+    mainMap.addClickEvent('its sunny!');
+    mainMap.addInfoWindow(center,"<b>Our House</b><p>It's raining!</p></b>");
+    // '<IMG BORDER="0" ALIGN="Left" SRC="rainy.jpg"> Oh Oh... ' + weatherInformation
 
 
-      var goToLondon = function(){
-        var london = { lat: 51.509865, lng: -0.118092 };
-        mainMap.googleMap.setCenter(london);
-        mainMap.addInfoWindow(london, "<h3>London is very sunny</h3>");
+      var goToArran = function(){
+        var arran = { lat: 55.580616, lng: -5.210857 };
+        mainMap.googleMap.setCenter(arran);
+        mainMap.addInfoWindow(arran, "<h3>Arran is always a sunny place!</h3>");
       }
 
       var findLocation = function(){
         mainMap.geoLocate();
       }
 
-      ldnButton.addEventListener('click', goToLondon);
-      checkLocation.addEventListener('click', findLocation);
+      arranButton.addEventListener('click', goToArran);
+      // checkLocation.addEventListener('click', findLocation);
     }
 
 

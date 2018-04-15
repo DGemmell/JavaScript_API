@@ -26,7 +26,7 @@
 
       marker.addListener('click', function () {
         var infoWindow = new google.maps.InfoWindow({
-          content: weatherInformation
+          content: '<IMG BORDER="0" ALIGN="Left" SRC="sunny.jpeg"> Good news... ' + weatherInformation
         });
         infoWindow.open(this.map, marker);
       });
@@ -44,7 +44,6 @@
         });
         infoWindow.open(this.map, marker);
       })
-      debugger;
   }
 
 

@@ -5,16 +5,24 @@
     <title>Google Maps</title>
     <link rel='stylesheet' type='text/css' href='main.css'>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- <script src="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=3351093e25c30f219696047357c3f23f"></script> -->
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="mapWrapper.js"></script>
 </head>
 
 <body>
-  <div id="main-map"></div>
-  <button type="button" name="button" id="ldnButton">Take me to London</button>
-  <button type="button" name="button" id="checkLocation">Check Location</button>
-  <button type="button" name="button" id="Where's Sunny?">Where's Sunny?</button>
+  <main>
+  <h1>Where's Sunny?</h1>
+  <div class="center-me" id="main-map">></div>
+  </main>
+  <ul id='weather-list'></ul>
+  <button type="button" name="button" id="arranButton">Somewhere that always has the sun?</button>
+  <!-- <button type="button" name="button" id="checkLocation">Check Location</button> -->
+  <button type="button" name="button" id="Where's Sunny?">Where is the sun now?</button>
 
 </body>
+
+
 
 </html>
