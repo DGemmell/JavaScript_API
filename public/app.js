@@ -30,6 +30,7 @@ const initialize = function(){
       arranButton.addEventListener('click', goToArran);
       // checkLocation.addEventListener('click', findLocation);
     }
+    
 
 
 window.addEventListener('DOMContentLoaded', initialize);

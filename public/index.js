@@ -10,7 +10,8 @@ const makeRequest = function(url, callback){
 const requestComplete = function(){
   if(this.status !== 200) return;
   const jsonString = this.responseText;
-  weather = JSON.parse(jsonString);
+  weatherAPI = JSON.parse(jsonString);
+  forecast = weatherAPI.list
   populateList(forecast);
 };
 
